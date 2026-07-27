@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StudyPomo — Focus in blocks. Rest on purpose.</title>
+<meta name="description" content="StudyPomo is a Pomodoro study timer for Android. Ambient sounds, streaks and stats, and a timer that keeps running in the background.">
+<style>
+  :root {
+    --bg:#0F1420; --ink:#FFFFFF; --muted:#9BA1AE; --accent:#FF6B6B; --line:#232838;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:Inter,'Segoe UI',system-ui,-apple-system,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+    display:flex; align-items:center; justify-content:center;
+    min-height:100vh; padding:32px 24px;
+  }
+  .wrap { width:100%; max-width:560px; }
+  .mark { width:72px; height:72px; margin-bottom:28px; }
+  h1 { font-size:clamp(30px,7vw,42px); font-weight:800; letter-spacing:-1.2px; line-height:1.1; }
+  h1 .rest { color:var(--accent); display:block; }
+  p.lede { color:var(--muted); font-size:17px; margin-top:18px; }
+  ul { list-style:none; margin:28px 0 0; }
+  li { color:var(--muted); padding-left:20px; position:relative; margin-bottom:8px; font-size:15px; }
+  li::before { content:''; position:absolute; left:0; top:11px; width:6px; height:6px; border-radius:50%; background:var(--accent); opacity:.75; }
+  footer { margin-top:40px; padding-top:24px; border-top:1px solid var(--line); font-size:14px; color:var(--muted); }
+  a { color:var(--muted); text-decoration:underline; text-underline-offset:3px; }
+  a:hover, a:focus-visible { color:var(--accent); }
+  a:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
+  .pub { margin-top:10px; color:#6E7382; }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <!-- The app mark: a ring left deliberately open, matching the launcher icon. -->
+    <svg class="mark" viewBox="0 0 100 100" role="img" aria-label="StudyPomo">
+      <path d="M50 12 a38 38 0 1 1 -26.9 11.1" fill="none" stroke="#D8D9DB"
+            stroke-width="11" stroke-linecap="round"/>
+      <circle cx="50" cy="50" r="4.5" fill="#91939A"/>
+    </svg>
+
+    <h1>Focus in blocks.<span class="rest">Rest on purpose.</span></h1>
+
+    <p class="lede">StudyPomo is a Pomodoro study timer for Android, built for
+    students who want to focus without fighting their phone.</p>
+
+    <ul>
+      <li>Keeps running when you leave the app — pause or add five minutes from the notification</li>
+      <li>Ambient sounds that layer, and never silence your own music</li>
+      <li>Streaks, stats and a 28-day activity grid</li>
+      <li>Works offline. No account, no sign-up, no servers</li>
+    </ul>
+
+    <footer>
+      <a href="https://www.everythingabuad.com/p/studypomo-privacy-policy.html">Privacy policy</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:adeboyedamola97@gmail.com">Contact</a>
+      <div class="pub">Made by Everything ABUAD</div>
+    </footer>
+  </main>
+</body>
+</html>
